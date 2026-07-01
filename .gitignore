@@ -1,0 +1,22 @@
+# Generated attack / benchmark artifacts (too large for GitHub)
+bb_export/
+BackdoorBench/bb_export/
+BackdoorBench/record/
+BackdoorBench/data/
+
+# BackdoorBench runtime outputs
+BackdoorBench/logs/
+
+# Python
+__pycache__/
+*.py[cod]
+*.pyc
+
+# Jupyter
+.ipynb_checkpoints/
+
+# Large model checkpoints
+*.pt
+*.pth
+!BackdoorBench/resource/**/*.pt
+!BackdoorBench/resource/**/*.pth
