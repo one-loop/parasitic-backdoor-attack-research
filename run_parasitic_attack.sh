@@ -9,11 +9,13 @@
 #SBATCH --gres=gpu:a100:1
 #SBATCH --time=12:00:00
 
-set -euo pipefail
+set -eo pipefail
 
 source ~/.bashrc
+set +u
 eval "$(conda shell.bash hook)"
 conda activate deeplearning
+set -u
 
 pip install "numpy<2.0" opencv-python-headless
 
